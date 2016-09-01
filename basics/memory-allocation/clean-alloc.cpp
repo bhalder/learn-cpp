@@ -7,6 +7,9 @@ int main() {
    if (value2 == NULL) {
       std::cout << "Value2 alloc failed." << std::endl;
    }
+
+   delete value;
+   delete value2; // Free all allocated memory
  
    return 0;
 }
